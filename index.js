@@ -5,11 +5,19 @@ const port = 3000;
 app.set('view engine', 'ejs');
 
 
+//this will allow us to serve up static files, CSS, images & JS
+app.use(express.static(__dirname));
+
+
 
 app.get('/', (req, res) => {
   var title = 'Home Page';
-  //res.send('Ola Express!');
-  res.render('index',{'title':title});
+  res.render('pages/index', { 'title': title });
+});
+
+app.get('/about', (req, res) => {
+  var title = 'About Page';
+  res.render('pages/about', { 'title': title });
 });
 
 
