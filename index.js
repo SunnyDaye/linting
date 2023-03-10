@@ -31,7 +31,7 @@ app.get('/users', function(req, res) {
   });
 });
 
-//add user/view route - we are cheating by using the array index - 1
+//qadd user/view route - we are cheating by using the array index - 1
 app.get('/users/view/:id', function(req, res) {
   var title = 'User Page';
   var id = req.params.id;
@@ -41,6 +41,10 @@ app.get('/users/view/:id', function(req, res) {
   });
 });
 
+app.get('/contact', (req, res) => {
+  var title = 'Contact Page';
+  res.render('pages/contact', { 'title': title });
+});
 
 
 
