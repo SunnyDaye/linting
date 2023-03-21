@@ -4,7 +4,7 @@
   "description": "Import this repo to create a starting point for Node.js projects in repl.it, https://replit.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "lint:css": "stylelint '**/*.css'",
     "lint:css:fix": "stylelint '**/*.css' --fix",
     "lint:js": "eslint '**/*.js' --ignore-pattern node\\_modules/",
